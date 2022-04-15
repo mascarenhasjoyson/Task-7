@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container-fluid" style="background-color: rgb(236, 255, 127);">
+    <div class="row">
+
+      <div class="col-4">
+        
+        <h1 id="title">DOM Manipulation with Forms</h1>
+        <p class="fs-5" id="description">The details entered in the form would be displayed in the table: </p>
+        
+        <div  id="container" >
+          <form id="form">
+            <div class="row mb-3">
+              <label for="first-name" class="col-sm-2 col-form-label">First Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="first-name" required>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="last-name" class="col-sm-2 col-form-label">Last Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="last-name" required>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="address" class="col-sm-2 col-form-label">Address</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="address" required>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="pincode" class="col-sm-2 col-form-label">Pin Code</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control" id="pincode" required>
+              </div>
+            </div>
+
+            <div class="form-check">
+              <label for="Gender">Gender</label><br>
+              <input class="form-check-input" type="radio" name="gender" value="Male">
+              <label class="form-check-label">
+                Male
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender" value="Female"> 
+              <label class="form-check-label">
+                Female
+              </label>
+            </div><br>
+
+            <div class="form-check">
+              <label for="Food">Food Choice(Must select at 2 out of 5)</label><br>
+              <input class="form-check-input" type="checkbox" value="Indian" name="food">
+              <label class="form-check-label" for="Indian">
+                Indian
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Italian" name="food">
+              <label class="form-check-label" for="Italian">
+                Italian
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Chinese" name="food">
+              <label class="form-check-label" for="Chinese">
+                Chinese
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Japanese" name="food">
+              <label class="form-check-label" for="Japanese">
+                Japanese
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="American" name="food">
+              <label class="form-check-label" for="American">
+                American
+              </label>
+            </div>
+            <div class="row mb-3">
+              <label for="state" class="col-sm-2 col-form-label">State</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="state" required>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="country" class="col-sm-2 col-form-label">Country</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="country" required>
+              </div>
+            </div>
+
+            <button type="button" id="submit" value="submit" class="btn btn-primary">Submit</button>
+            <input type="reset" name="r1" value="Reset" class="btn btn-primary">
+            <br><br><br><br><br><br>
+          </form>
+        </div>
+      </div>
+      <div class="col-8 pt-5">
+        
+        <div><table class="table" id="table">
+          <thead class="table-dark">
+            <tr>
+              <th class="fs-5">First Name</th>
+              <th class="fs-5">Last Name</th>
+              <th class="fs-5">Address</th>
+              <th class="fs-5">Pin Code</th>
+              <th class="fs-5">Gender</th>
+              <th class="fs-5">Food Choice</th>
+              <th class="fs-5">State</th>
+              <th class="fs-5">Country</th>
+            </tr>
+          </thead>
+          <tbody class="table-body">
+            <tr>
+              
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+    </div>
+    
+  </div>
+  </div>  
+  
+    <script src="script.js"></script>
+  </body>
+  </html>
